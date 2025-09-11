@@ -2,7 +2,7 @@
 Techbros 
 */
 
-Const config = require('../config')
+const config = require('../config')
 let fs = require('fs')
 const os = require("os")
 const { cmd, commands } = require('../command')
