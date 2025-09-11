@@ -11,7 +11,7 @@ const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, 
 cmd({
     pattern: "ping",
     react: "⚡️",
-    alias: ["speed", "ping2", "ping3"],
+    alias: ["speed"],
     desc: "Check the bot's speed and status.",
     category: "main",
     use: '.ping',
