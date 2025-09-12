@@ -1,3 +1,6 @@
+/*
+Techbros md 
+*/
 const config = require('../config');
 const { cmd, commands } = require('../command');
 const os = require('os');
@@ -113,7 +116,7 @@ cmd({
     // Send audio note
     await conn.sendMessage(from, {
       audio: { 
-        url: 'add audio' 
+        url: 'https://github.com/Immanuel999-felix/TECHBROS-DATA/raw/refs/heads/main/menu.mp3' 
       },
       mimetype: 'audio/mp4',
       ptt: true
