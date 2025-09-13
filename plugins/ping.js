@@ -10,7 +10,7 @@ const os = require('os');
 cmd({
     pattern: "ping",
     // All aliases from all other files are now combined here.
-    alias: ["speed", "pong", "ping2", "ping3", "ping4", "latency"],
+    alias: [ "ping", "latency"],
     desc: "Check bot's speed and status.",
     category: "main",
     react: "⚡️",
