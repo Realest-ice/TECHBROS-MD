@@ -9,7 +9,7 @@ const { cmd, commands } = require('../command')
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson} = require('../lib/functions')
 
 cmd({
-    pattern: "ping",
+    pattern: "ping2",
     react: "⚡️",
     alias: ["speed"],
     desc: "Check the bot's speed and status.",
