@@ -1,5 +1,5 @@
 const config = require('../config);
-const { lite } = require('../command);
+const { cmd } = require('../command);
 const DY_SCRAP = require('@dark-yasiya/scrap');
 const dy_scrap = new DY_SCRAP();
 
