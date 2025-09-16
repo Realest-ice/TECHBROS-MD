@@ -6,7 +6,7 @@ const config = require('../config')
 const {cmd , commands} = require('../command')
 cmd({
     pattern: "about",
-    alias: ["techbros","whois"], 
+    alias: ["techbros","creator"], 
     react: "👑",
     desc: "get owner info",
     category: "main",
@@ -29,7 +29,7 @@ Fast, reliable, and built for all your automation needs.
 https://yourwebsite.com  
 
 *💻 Source Code (GitHub):*  
-https://github.com/username/TECHBROS-MD  
+https://github.com/Realest-ice/TECHBROS-MD
 
 *✅Stay Updated 
 Join Our WhatsApp Channel
