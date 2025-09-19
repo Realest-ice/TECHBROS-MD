@@ -1,23 +1,25 @@
-# Use a lightweight Node.js LTS image based on the latest stable OS
-FROM node:20-alpine
+FROM node:lts
 
-# Install system dependencies needed for media processing
-RUN apk add --no-cache \
-    ffmpeg \
-    imagemagick \
-    webp-dev
+# Install dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg imagemagick webp && apt-get clean
 
-# Set the working directory inside the container
-WORKDIR /usr/src/app
+# Set working directory
+WORKDIR /app
 
-# Copy package.json and package-lock.json to leverage Docker cache
+# Copy package files
 COPY package*.json ./
 
-# Install application dependencies
-RUN npm install
+# Install dependencies
+RUN npm install && npm cache clean --force
 
-# Copy the rest of the application's source code
+# Copy application code
 COPY . .
 
-# Command to run the bot when the container starts
-CMD [ "npm", "start" ]
+# Expose port
+EXPOSE 3000
+
+# Set environment
+ENV NODE_ENV production
+
+# Run command
+CMD ["npm", "run", "start"]
