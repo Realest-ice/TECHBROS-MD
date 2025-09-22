@@ -3,15 +3,6 @@
 A Multi-Device WhatsApp Bot powered by [Baileys](https://github.com/adiwajshing/Baileys), designed to automate tasks, moderate groups, and provide entertainment directly from WhatsApp.  
 **TECHBROS-MD** is crafted for ease of use, customization, and extensibility.
 
----
-
-<p align="center">
-<img alt="Development" width="250" src="https://media2.giphy.com/media/W9tBvzTXkQopi/giphy.gif?cid=6c09b952xu6syi1fyqfyc04wcfk0qvqe8fd7sop136zxfjyn&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g" />
-</p>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-
----
-
 ## 🚀 Features
 
 - 🔄 Multi-Device WhatsApp support
@@ -103,6 +94,15 @@ For major changes, open an issue first to discuss what you would like to change.
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a pull request
+
+---
+
+<p align="center">
+<img alt="Development" width="250" src="https://media2.giphy.com/media/W9tBvzTXkQopi/giphy.gif?cid=6c09b952xu6syi1fyqfyc04wcfk0qvqe8fd7sop136zxfjyn&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g" />
+</p>
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+
+---
 
 ## ❤️ Credits
 
