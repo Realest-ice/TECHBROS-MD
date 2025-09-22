@@ -3,17 +3,15 @@
 A Multi-Device WhatsApp Bot powered by [Baileys](https://github.com/adiwajshing/Baileys), designed to automate tasks, moderate groups, and provide entertainment directly from WhatsApp.  
 **TECHBROS-MD** is crafted for ease of use, customization, and extensibility.
 
-## 🚀 Features
+</div>
 
-- 🔄 Multi-Device WhatsApp support
-- 📚 Extensive command set (fun, moderation, info, utility, and more)
-- 🔐 Session-based authentication
-- 🎨 Easy to customize and extend
-- 🛡️ Group moderation tools (anti-link, anti-spam, etc.)
-- 🌐 API integration (weather, news, etc.)
-- ⚙️ Owner/admin commands
-- 📂 Media downloader
-- 💁 24/7 Uptime (if hosted on cloud or VPS)
+## 🚀 **BOT FEATURES** 💌
+
+| **Menu**       | **Bot** | **Group** | **Search** | **Download** | **Tools** | **AI** | **Game** | **Fun** | **Owner** | **Convert** | **List** |
+|-----------------|---------|-----------|------------|--------------|-----------|--------|----------|---------|-----------|---------|-------------|----------|
+| **Work** ➜     | ✅       | ✅         | 🛠️         | ✅            | ✅         | ✅      | ✅        | ✅       | ✅         | ✅       | ✅        |
+
+---------------------
 
 ## 🆔 Get Your Session ID
 
