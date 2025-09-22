@@ -3,6 +3,14 @@
 A Multi-Device WhatsApp Bot powered by [Baileys](https://github.com/adiwajshing/Baileys), designed to automate tasks, moderate groups, and provide entertainment directly from WhatsApp.  
 **TECHBROS-MD** is crafted for ease of use, customization, and extensibility.
 
+<p align="center">  
+  <a href="https://i.postimg.cc/8zRCGdNT/IMG-20250602-WA0030.jpg">
+    <img alt="PRABATH-MD Logo" src="https://i.postimg.cc/8zRCGdNT/IMG-20250602-WA0030.jpg" width="300">
+  </a>  
+</p>  
+
+---
+
 ---
 
 ### 📞 **Contact the Creators**
