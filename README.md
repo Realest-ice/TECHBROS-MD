@@ -4,23 +4,21 @@ A Multi-Device WhatsApp Bot powered by [Baileys](https://github.com/adiwajshing/
 **TECHBROS-MD** is crafted for ease of use, customization, and extensibility.
 
 <p align="center">  
-  <a href="https://i.postimg.cc/8zRCGdNT/IMG-20250602-WA0030.jpg">
-    <img alt="PRABATH-MD Logo" src="https://i.postimg.cc/8zRCGdNT/IMG-20250602-WA0030.jpg" width="300">
+  <a href="https://i.ibb.co/d0Fv6ZS9/IMG-20250425-WA0004.jpg">
+    <img alt="TECHBROS-MD Logo" src="https://i.ibb.co/d0Fv6ZS9/IMG-20250425-WA0004.jpg" width="300">
   </a>  
 </p>  
 
 ---
 
----
-
-### 📞 **Contact the Creators**
+### 📞 **CONTACT THE CREATORS**
 
 <a href="https://wa.me/2349126807818"><img alt='OWNER 1' src='https://img.shields.io/badge/WhatsApp%201-25D366?style=for-the-badge&logo=whatsapp&logoColor=white'/></a>  
 <a href="https://wa.me/2349076087791"><img alt='OWNER 2' src='https://img.shields.io/badge/WhatsApp%202-128C7E?style=for-the-badge&logo=whatsapp&logoColor=white'/></a>
 
 </div>
 
-## 🚀 **BOT FEATURES** 💌
+## 🤖 **BOT FEATURES** 📦
 
 | **Menu**       | **Bot** | **Group** | **Search** | **Download** | **Tools** | **AI** | **Game** | **Fun** | **Owner** | **Convert** | **List** |
 |-----------------|---------|-----------|------------|--------------|-----------|--------|----------|---------|-----------|-------------|----------|
