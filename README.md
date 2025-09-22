@@ -3,23 +3,22 @@
 A Multi-Device WhatsApp Bot powered by [Baileys](https://github.com/adiwajshing/Baileys), designed to automate tasks, moderate groups, and provide entertainment directly from WhatsApp.  
 **TECHBROS-MD** is crafted for ease of use, customization, and extensibility.
 
-
 ---
 
-### 📞 **Contact the Creator**
+### 📞 **Contact the Creators**
 
-<a href="https://lazack.biz.id"><img alt='OWNER' src='https://img.shields.io/badge/GET%20IN%20TOUCH-magenta?style=for-the-badge&logo=opencv&logoColor=white'/></a>
+<a href="https://wa.me/2349126807818"><img alt='OWNER 1' src='https://img.shields.io/badge/WhatsApp%201-25D366?style=for-the-badge&logo=whatsapp&logoColor=white'/></a>  
+<a href="https://wa.me/2349076087791"><img alt='OWNER 2' src='https://img.shields.io/badge/WhatsApp%202-128C7E?style=for-the-badge&logo=whatsapp&logoColor=white'/></a>
 
 </div>
 
 ## 🚀 **BOT FEATURES** 💌
 
 | **Menu**       | **Bot** | **Group** | **Search** | **Download** | **Tools** | **AI** | **Game** | **Fun** | **Owner** | **Convert** | **List** |
-|-----------------|---------|-----------|------------|--------------|-----------|--------|----------|---------|-----------|---------|-------------|----------|
-| **Work** ➜     | ✅       | ✅         | ✅          | ✅            | ✅         | ✅      | ✅        | ✅       | ✅         | ✅       | ✅           | 
+|-----------------|---------|-----------|------------|--------------|-----------|--------|----------|---------|-----------|-------------|----------|
+| **Work** ➜     | ✅       | ✅         | ✅          | ✅            | ✅         | ✅      | ✅        | ✅       | ✅         | ✅           | ✅        |
 
 ---------------------
-
 
 ## 🆔 Get Your Session ID
 
