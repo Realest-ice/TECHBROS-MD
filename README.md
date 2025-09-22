@@ -135,7 +135,8 @@ We welcome contributions!
 ## ❤️ Credits
 
 - [Baileys](https://github.com/adiwajshing/Baileys)  
-- [Realest-ice](https://github.com/Realest-ice)  
+- [Realest-ice](https://github.com/Realest-ice)
+- [H-vidz15](https://github.com/H-vidz15)
 - All contributors & open source developers 💡  
 
 ---
@@ -147,5 +148,5 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 <p align="center">
-  <b>Made with ❤️ by Realest-ice & the TECHBROS Team</b>
+  <b>Made with ❤️ by Realest-ice &  H-vidz15</b>
 </p>
