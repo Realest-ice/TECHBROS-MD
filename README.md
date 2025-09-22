@@ -4,17 +4,22 @@ A Multi-Device WhatsApp Bot powered by [Baileys](https://github.com/adiwajshing/
 **TECHBROS-MD** is crafted for ease of use, customization, and extensibility.
 
 
-src='https://img.shields.io/badge/GET%20IN%20TOUCH-magenta?style=for-the-badge&logo=opencv&logoColor=white'/></a>
+---
+
+### 📞 **Contact the Creator**
+
+<a href="https://lazack.biz.id"><img alt='OWNER' src='https://img.shields.io/badge/GET%20IN%20TOUCH-magenta?style=for-the-badge&logo=opencv&logoColor=white'/></a>
 
 </div>
 
-## 🤖 **BOT FEATURES** 📦
+## 🚀 **BOT FEATURES** 💌
 
-| **Menu**       | **Bot** | **Group** | **Search** | **Download** | **Tools** | **AI** | **Game** | **Fun** | **Owner** | **Convert** | **List** |
+| **Menu**       | **Bot** | **Group** | **Search** | **Download** | **Tools** | **AI** | **Game** | **Fun** | **Owner** | **Bug** | **Convert** | **List** |
 |-----------------|---------|-----------|------------|--------------|-----------|--------|----------|---------|-----------|---------|-------------|----------|
-| **Work** ➜     | ✅       | ✅         | 🛠️         | ✅            | ✅         | ✅      | ✅        | ✅       | ✅         | ✅       | ✅        |
+| **Work** ➜     | ✅       | ✅         | ✅          | ✅            | ✅         | ✅      | ✅        | ✅       | ✅         | ✅       | ✅           | ✅        |
 
 ---------------------
+
 
 ## 🆔 Get Your Session ID
 
