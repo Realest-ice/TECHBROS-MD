@@ -3,9 +3,12 @@
 A Multi-Device WhatsApp Bot powered by [Baileys](https://github.com/adiwajshing/Baileys), designed to automate tasks, moderate groups, and provide entertainment directly from WhatsApp.  
 **TECHBROS-MD** is crafted for ease of use, customization, and extensibility.
 
+
+src='https://img.shields.io/badge/GET%20IN%20TOUCH-magenta?style=for-the-badge&logo=opencv&logoColor=white'/></a>
+
 </div>
 
-## 🚀 **BOT FEATURES** 💌
+## 🤖 **BOT FEATURES** 📦
 
 | **Menu**       | **Bot** | **Group** | **Search** | **Download** | **Tools** | **AI** | **Game** | **Fun** | **Owner** | **Convert** | **List** |
 |-----------------|---------|-----------|------------|--------------|-----------|--------|----------|---------|-----------|---------|-------------|----------|
