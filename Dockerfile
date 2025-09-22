@@ -16,7 +16,7 @@ RUN npm install && npm cache clean --force
 COPY . .
 
 # Expose port
-EXPOSE 3000
+EXPOSE 9090
 
 # Set environment
 ENV NODE_ENV production
