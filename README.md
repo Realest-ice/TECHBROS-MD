@@ -14,9 +14,9 @@ A Multi-Device WhatsApp Bot powered by [Baileys](https://github.com/adiwajshing/
 
 ## 🚀 **BOT FEATURES** 💌
 
-| **Menu**       | **Bot** | **Group** | **Search** | **Download** | **Tools** | **AI** | **Game** | **Fun** | **Owner** | **Bug** | **Convert** | **List** |
+| **Menu**       | **Bot** | **Group** | **Search** | **Download** | **Tools** | **AI** | **Game** | **Fun** | **Owner** | **Convert** | **List** |
 |-----------------|---------|-----------|------------|--------------|-----------|--------|----------|---------|-----------|---------|-------------|----------|
-| **Work** ➜     | ✅       | ✅         | ✅          | ✅            | ✅         | ✅      | ✅        | ✅       | ✅         | ✅       | ✅           | ✅        |
+| **Work** ➜     | ✅       | ✅         | ✅          | ✅            | ✅         | ✅      | ✅        | ✅       | ✅         | ✅       | ✅           | 
 
 ---------------------
 
