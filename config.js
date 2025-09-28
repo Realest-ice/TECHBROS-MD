@@ -7,7 +7,7 @@ function convertToBool(text, truthy = 'true') {
 
 module.exports = {
     // SESSION & BOT INFO
-    SESSION_ID: process.env.SESSION_ID || "TECHBROS-MD~MFxh1Y6R#qVA0k-MhQRpGJSBYWNt-KNe85iRCxXjY7tFNcz1wzA8",
+    SESSION_ID: process.env.SESSION_ID || "TECHBROS-MD~CJ8zRASJ#E3BZ3kElDeUyYjMzqiQELeT7RDoNORR7aDq-Sz0ysTg",
     BOT_NAME: process.env.BOT_NAME || "TECHBROS MD",
     OWNER_NAME: process.env.OWNER_NAME || "TECH BROS",
     OWNER_NUMBER: process.env.OWNER_NUMBER || "27682708973", // Bot owner's number
