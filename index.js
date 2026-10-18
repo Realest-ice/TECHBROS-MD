@@ -117,7 +117,13 @@ function getQuoted(msg) {
 }
 
 async function startBot() {
-    const { state, saveCreds } = await useMultiFileAuthState('./session');
+    // FIXED: Using absolute path to guarantee panel locates the session folder & creds.json
+    const sessionDir = path.join(__dirname, 'session');
+    if (!fs.existsSync(sessionDir)) {
+        fs.mkdirSync(sessionDir, { recursive: true });
+    }
+
+    const { state, saveCreds } = await useMultiFileAuthState(sessionDir);
     const { version } = await fetchLatestBaileysVersion().catch(() => ({ version: [2, 3000, 1015901307] }));
 
     const sock = makeWASocket({
@@ -129,7 +135,7 @@ async function startBot() {
         },
         browser: ['Ubuntu', 'Chrome', '20.0.04'],
         generateHighQualityLinkPreview: true,
-        syncFullHistory: false, // Prevents 408 handshake timeout
+        syncFullHistory: false,
         fireInitQueries: true,
         getMessage: async (key) => {
             return { conversation: '' };
@@ -158,7 +164,7 @@ async function startBot() {
     });
 
     // =====================
-    // PAIRING LOGIC
+    // PAIRING LOGIC (Fallback if creds missing)
     // =====================
     if (!sock.authState.creds.registered) {
         const phoneNumber = process.env.PHONE_NUMBER || config.owners[0]?.replace('@s.whatsapp.net', '');
@@ -172,7 +178,7 @@ async function startBot() {
                 }
             }, 5000);
         } else {
-            console.warn('[Pairing] No phone number set. Set PHONE_NUMBER in .env');
+            console.warn('[Pairing] No session creds found and no PHONE_NUMBER set.');
         }
     }
 
@@ -359,7 +365,7 @@ async function startBot() {
 
             console.log(`[Connection] Closed. Code: ${code}. Reconnecting: ${shouldReconnect}`);
             if (shouldReconnect) {
-                setTimeout(() => startBot(), 5000); // 5s retry buffer
+                setTimeout(() => startBot(), 5000);
             } else {
                 console.log('[Connection] Logged out. Clear session to re-pair.');
             }
