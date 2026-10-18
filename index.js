@@ -5,6 +5,7 @@ const {
     DisconnectReason,
     makeCacheableSignalKeyStore,
     getContentType,
+    fetchLatestBaileysVersion
 } = require('@whiskeysockets/baileys');
 const pino = require('pino');
 const express = require('express');
@@ -27,7 +28,7 @@ const { handleReactions } = require('./lib/reactor');
 const { setupConsoleFilters } = require('./lib/consoleFilter');
 setupConsoleFilters();
 
-const Logger = require('./lib/logger'); // adjust path to match where you saved it
+const Logger = require('./lib/logger');
 
 process.on('uncaughtException', (err) => {
     Logger.error('[FATAL] Uncaught Exception', err);
@@ -117,21 +118,23 @@ function getQuoted(msg) {
 
 async function startBot() {
     const { state, saveCreds } = await useMultiFileAuthState('./session');
+    const { version } = await fetchLatestBaileysVersion().catch(() => ({ version: [2, 3000, 1015901307] }));
 
-const sock = makeWASocket({
-    logger: pino({ level: 'silent' }),
-    auth: {
-        creds: state.creds,
-        keys: makeCacheableSignalKeyStore(state.keys, pino({ level: 'silent' }))
-    },
-    browser: ['Ubuntu', 'Chrome', '124.0.0.0'],
-    generateHighQualityLinkPreview: true,
-    syncFullHistory: true,
-    fireInitQueries: true,
-    getMessage: async (key) => {
-        return { conversation: '' };
-    }
-});
+    const sock = makeWASocket({
+        version,
+        logger: pino({ level: 'silent' }),
+        auth: {
+            creds: state.creds,
+            keys: makeCacheableSignalKeyStore(state.keys, pino({ level: 'silent' }))
+        },
+        browser: ['Ubuntu', 'Chrome', '20.0.04'],
+        generateHighQualityLinkPreview: true,
+        syncFullHistory: false, // Prevents 408 handshake timeout
+        fireInitQueries: true,
+        getMessage: async (key) => {
+            return { conversation: '' };
+        }
+    });
 
     sock.ev.on('creds.update', saveCreds);
     setupGroupCacheListeners(sock);
@@ -203,7 +206,7 @@ const sock = makeWASocket({
                 return;
             }
 
-            // ── VIEW ONCE RECOVER (disabled — see statusHandler.js) ────
+            // ── VIEW ONCE RECOVER ─────────────────────────────────────
             await handleViewOnce(sock, msg);
 
             // ── STATUS REPLY DETECTION ─────────────────────────────────
@@ -329,11 +332,11 @@ const sock = makeWASocket({
             if (inGroup) await handleGroupEvents(sock, msg, metadata).catch(() => {});
 
             try {
-    await command.handler(sock, msg, metadata);
-} catch (err) {
-    Logger.error(`[CMD] ${cmd} failed`, err);
-    if (config.debug) console.error(err.stack);
-}
+                await command.handler(sock, msg, metadata);
+            } catch (err) {
+                Logger.error(`[CMD] ${cmd} failed`, err);
+                if (config.debug) console.error(err.stack);
+            }
 
             if (config.autoTyping && !inGroup) {
                 await sock.sendPresenceUpdate('paused', remoteJid).catch(() => {});
@@ -356,7 +359,7 @@ const sock = makeWASocket({
 
             console.log(`[Connection] Closed. Code: ${code}. Reconnecting: ${shouldReconnect}`);
             if (shouldReconnect) {
-                setTimeout(() => startBot(), 3000);
+                setTimeout(() => startBot(), 5000); // 5s retry buffer
             } else {
                 console.log('[Connection] Logged out. Clear session to re-pair.');
             }
