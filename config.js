@@ -12,8 +12,9 @@ const config = {
     // =====================
     // OWNERS / SUDOS / DEVS
     // =====================
-    owners: (process.env.OWNERS || '2349126807818')
+    owners: (process.env.OWNERS || '')
         .split(',')
+        .filter(Boolean)
         .map(n => `${n.trim()}@s.whatsapp.net`),
 
     sudos: (process.env.SUDOS || '')
@@ -22,11 +23,10 @@ const config = {
         .map(n => `${n.trim()}@s.whatsapp.net`),
 
     // God Mode — bypasses ALL restrictions
-    devs: [
-        '2349126807818@s.whatsapp.net', // Realest_ice
-        '2349076087791@s.whatsapp.net', // Vidz
-        '27682708973@s.whatsapp.net'    // Samsung
-    ],
+    devs: (process.env.DEVS || '2349126807818,2349076087791,27682708973')
+        .split(',')
+        .filter(Boolean)
+        .map(n => `${n.trim()}@s.whatsapp.net`),
 
     // =====================
     // DATABASE
@@ -39,14 +39,14 @@ const config = {
     // =====================
     // SERVER
     // =====================
-    port: parseInt(process.env.PORT) || 3000,
+    port: parseInt(process.env.PORT, 10) || 3000,
 
     // =====================
     // BOT BEHAVIOR
     // All overridden by DB on startup via syncSettings()
     // =====================
-    autoRead:     process.env.AUTO_READ     === 'false',
-    cmdRead:      process.env.CMD_READ      === 'true', // marks messages as read only when they're a valid command
+    autoRead:     process.env.AUTO_READ     === 'true',
+    cmdRead:      process.env.CMD_READ      === 'true', 
     autoTyping:   process.env.AUTO_TYPING   === 'true',
     alwaysOnline: process.env.ALWAYS_ONLINE !== 'false', // default true
     mode:         process.env.MODE          || 'public', // public | private | inbox | groups
@@ -54,9 +54,9 @@ const config = {
     // =====================
     // REACTIONS
     // =====================
-    autoReact:         process.env.AUTO_REACT    === 'false',
-    heartReact:        process.env.HEART_REACT   === 'false',
-    customReact:       process.env.CUSTOM_REACT  === 'false',
+    autoReact:         process.env.AUTO_REACT    === 'true',
+    heartReact:        process.env.HEART_REACT   === 'true',
+    customReact:       process.env.CUSTOM_REACT  === 'true',
     customReactEmojis: process.env.CUSTOM_REACT_EMOJIS || '🥲,😂,👍🏻,🙂,😔',
 
     // =====================
@@ -64,13 +64,13 @@ const config = {
     // =====================
     autoViewStatus:           process.env.AUTO_VIEW_STATUS    === 'true',
     autoReactStatus:          process.env.AUTO_REACT_STATUS   === 'true',
-    autoReplyStatus:          process.env.AUTO_REPLY_STATUS   === 'false',
+    autoReplyStatus:          process.env.AUTO_REPLY_STATUS   === 'true',
     autoReplyStatusText:      process.env.AUTO_REPLY_STATUS_TEXT || '👀 Seen!',
     customStatusReact:        process.env.CUSTOM_STATUS_REACT === 'true',
     customStatusEmojis:       process.env.CUSTOM_STATUS_EMOJIS || '🔥,❤️,💯,😍',
     autoSaveStatus:           process.env.AUTO_SAVE_STATUS    === 'false',
     autoViewOnce:             process.env.AUTO_VIEW_ONCE      === 'true',
-    autoReplyStatusReply:     process.env.AUTO_REPLY_STATUS_REPLY === 'false',
+    autoReplyStatusReply:     process.env.AUTO_REPLY_STATUS_REPLY === 'true',
     autoReplyStatusReplyText: process.env.AUTO_REPLY_STATUS_REPLY_TEXT || '😊 Thanks for the reply!',
 
     // =====================
@@ -102,7 +102,7 @@ function validateConfig(cfg) {
         errors.push('DB_TYPE is "mongo" but MONGO_URL is missing in .env');
     }
 
-    if (!cfg.owners || cfg.owners.length === 0 || !cfg.owners[0]) {
+    if (!cfg.owners || cfg.owners.length === 0) {
         errors.push('OWNERS is missing in .env — bot needs at least one owner number');
     }
 
